@@ -1,0 +1,16 @@
+{% extends 'master.html' %}
+{% block body %}
+  <form method="POST" >
+
+    <LABEL for="username">Username:</LABEL>
+    <input type="text" name="username">
+    <br/>
+    <LABEL for="password">Password:</LABEL>
+    <input type="password" name="password">
+    <br/>
+    <input type = "submit" value="Login">
+
+    {% csrf_token %}
+
+  </form>
+{% endblock %}
